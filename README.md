@@ -19,7 +19,7 @@ To run :
 
 `cd CMSSW_9_4_8/src`
 
-`git clone https://github.com/reimersa/B2GDAS.git Analysis/B2GDAS`
+`git clone https://github.com/karavdin/B2GDAS Analysis/B2GDAS`
 
 `cd Analysis/B2GDAS`
 

@@ -5,8 +5,8 @@ from DataFormats.FWLite import Events, Handle
 
 # Use the VID framework for the electron ID. Tight ID without the PF isolation cut. 
 from RecoEgamma.ElectronIdentification.VIDElectronSelector import VIDElectronSelector
-from RecoEgamma.ElectronIdentification.Identification.cutBasedElectronID_Fall17_94X_V1_cff import cutBasedElectronID_Fall17_94X_V1_tight
-#from RecoEgamma.ElectronIdentification.Identification.mvaElectronID_Fall17_noIso_V1_cff import mvaEleID_Fall17_V1_wp80
+#from RecoEgamma.ElectronIdentification.Identification.cutBasedElectronID_Fall17_94X_V1_cff import cutBasedElectronID_Fall17_94X_V1_tight
+from RecoEgamma.ElectronIdentification.Identification.mvaElectronID_Fall17_noIso_V1_cff import mvaEleID_Fall17_V1_wp80
 #from RecoEgamma.ElectronIdentification.Identification.cutBasedElectronID_Spring15_25ns_V1_cff import cutBasedElectronID_Spring15_25ns_V1_standalone_tight
 #from RecoEgamma.ElectronIdentification.Identification.mvaElectronID_Spring15_25ns_nonTrig_V1_cff import mvaEleID_Spring15_25ns_nonTrig_V1_wp80
 
@@ -405,7 +405,7 @@ def b2gdas_fwlite(argv):
     runnr_F = 306462
     
 #TODO ele-ID
-    #selectElectron = VIDElectronSelector(mvaEleID_Fall17_V1_wp80)
+    selectElectron = VIDElectronSelector(mvaEleID_Fall17_V1_wp80)
     #selectElectron = VIDElectronSelector(cutBasedElectronID_Fall17_94X_V1_tight)
     #selectElectron._VIDSelectorBase__instance.ignoreCut('MinPtCut')
     #selectElectron = VIDElectronSelector(mvaEleID_Spring15_25ns_nonTrig_V1_wp80)
